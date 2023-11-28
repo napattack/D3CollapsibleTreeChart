@@ -575,7 +575,7 @@ com_oracle_apex_d3_tree_start = function(
     function processEvent_linkClick(d) {
       fireApexEvent("click", d);
       if (d.LINK) {
-        var win = apex.navigation.redirect(d.LINK);
+        var win = apex.navigation.redirect(d.LINK, "_blank");
         win.focus();
       }
     }
